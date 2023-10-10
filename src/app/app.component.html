@@ -1,0 +1,22 @@
+<h1>
+  {{title}}
+</h1>
+
+<primeiro-exercicio></primeiro-exercicio>
+
+<a href="{{ link }}">Ir para o Google</a>
+
+
+<p [style.backgroundColor]="background" [style.color]="color" (click)="onParagraphClick()">
+  clique aqui para mudar de cor.
+</p>
+
+
+
+<select [(ngModel)]="selectedOption">
+  <option *ngFor="let option of options" [value]="option.value">
+    {{ option.label }}
+  </option>
+</select>
+
+<p>Total: {{ total }}</p>
